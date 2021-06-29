@@ -1,0 +1,49 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "Server for Recipe Book app",
+	"main": "src/index.js",
+	"scripts": {
+		"dev": "nodemon --exec babel-node src/index.js",
+		"test": "jest",
+		"test:coverage": "npm run test -- --coverage",
+		"test:watch": "npm run test -- --watchAll"
+	},
+	"keywords": [],
+	"author": "Colin Bingham <cbingham96@gmail.com> (colinbingham.com)",
+	"license": "MIT",
+	"dependencies": {
+		"@babel/core": "^7.14.6",
+		"@babel/preset-env": "^7.14.7",
+		"axios": "^0.21.1",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.12.15",
+		"nodemon": "^2.0.7"
+	},
+	"devDependencies": {
+		"@babel/node": "^7.14.7",
+		"@shelf/jest-mongodb": "^1.2.5",
+		"babel-jest": "^27.0.5",
+		"eslint": "^7.29.0",
+		"faker": "^5.5.3",
+		"jest": "^27.0.5",
+		"prettier": "^2.3.2"
+	},
+	"babel": {
+		"presets": [
+			[
+				"@babel/preset-env",
+				{
+					"targets": {
+						"node": "current"
+					}
+				}
+			]
+		]
+	},
+	"jest": {
+		"preset": "@shelf/jest-mongodb"
+	}
+}
