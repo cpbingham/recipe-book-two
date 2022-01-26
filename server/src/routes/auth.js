@@ -7,7 +7,7 @@ const Auth = () => {
 
 	router.post('/register', AuthController.register);
 	router.post('/login', AuthController.login);
-	router.post('/me', authMiddleware, AuthController.me);
+	router.get('/me', authMiddleware, AuthController.me);
 
 	return router;
 };

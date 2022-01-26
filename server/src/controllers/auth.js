@@ -25,7 +25,7 @@ const register = async (req, res) => {
 		username,
 		...getSaltAndHash(password),
 	});
-	
+
 	return res.json({ user: authUserToJSON(newUser) });
 };
 

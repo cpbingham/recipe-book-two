@@ -1,6 +1,7 @@
 const client = (endpoint, customConfig = {}) => {
   const config = {
     method: "GET",
+    withCredentials: true,
     ...customConfig,
   };
 

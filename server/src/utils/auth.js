@@ -59,8 +59,8 @@ const getLocalStrategy = () => {
 };
 
 const userToJSON = (user) => {
-	let {_id, username} = user
-	return {_id, username};
+	let { _id, username } = user
+	return { _id, username };
 };
 
 export {
